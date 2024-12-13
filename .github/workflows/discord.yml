@@ -1,0 +1,16 @@
+name: Discord
+on:
+  push:
+    branches: [main]
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    name: my build
+    steps:
+      - name: discord-action
+        uses: sebastianpopp/discord-action@v2.0
+        with:
+          webhook: https://discordapp.com/api/webhooks/1316956354786885673/TnLUfOQiSbcjinGjEXP44tQwVosbe8HGv_gviHMyIZYWbWlr4rcTYRDpNk24h2DO7pa5
+          # Message to be sent
+          message: "hi -avery"
